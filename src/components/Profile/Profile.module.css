@@ -1,8 +1,4 @@
-/* ul {
-    background-color: rgb(229, 229, 229);
-} */
-
-li {
+.li {
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -11,7 +7,7 @@ li {
   border-top: 2px solid rgb(177, 177, 177);
 }
 
-li:not(:last-child) {
+.li:not(:last-child) {
   border-right: 2px solid rgb(177, 177, 177);
 }
 

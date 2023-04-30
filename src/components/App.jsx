@@ -1,14 +1,14 @@
 import { Profile } from './Profile/Profile';
-import user from '../Json/user.json';
+import user from '../json/user.json';
 
 import { Statistics } from './Statistics/Statistics';
-import data from '../Json/data.json';
+import data from '../json/data.json';
 
 import { FriendsList } from './FriendList/FriendList';
-import friends from '../Json/friends.json';
+import friends from '../json/friends.json';
 
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
-import transactions from '../Json/transactions.json';
+import transactions from '../json/transactions.json';
 
 export const App = () => {
   return (
@@ -18,7 +18,9 @@ export const App = () => {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        stats={user.stats}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
       />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
